@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Cargar las bibliotecas de TensorFlow.js y el modelo de MobileNet desde el CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  </head>
+  <body>
+    <h1>TensorFlow.js Mobilenet Demo</h1>
+    <input type="file" id="imageUpload" accept="image/*" />
+    <button id="submitButton">Submit</button>
+    <br />
+    <img
+      id="img"
+      src=""
+      alt="Upload an image"
+      style="max-width: 400px; display: none"
+    />
+    <div id="results"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
